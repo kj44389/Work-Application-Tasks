@@ -6,8 +6,6 @@ class InvoiceController
     public static function deleteInvoice(int $id){
         $invoice = new InvoiceModel();
         $invoice->delete($id);
-        //to prevent submit due refresh
-        header('Location: index.php');
     }
     //method for insert invoice record to database
     public static function insertInvoice(array $data){
@@ -23,15 +21,12 @@ class InvoiceController
                 ->setDateOfMaking($data['date-of-making'])
                 ->setName($data['name'])
                 ->setUnitPrice(floatval($data['unit-price']))
-                ->setQuantity($data['quantity'])
+                ->setQuantity($data['quantity'])    
                 ->setDiscount(floatval(($data['discount']/100))) // create equivalent in float version 23% = 0.23
                 ->setNetValue(floatval($data['net-value']))
                 ->setVatValue(floatval(($data['vat-value']/100)))
                 ->setGrossValue(floatval($data['gross-value']));
         $model->insert($invoice);
-        //to prevent submit due refresh
-        header('Location: index.php');
-
     }
     //method for show records from database
     public static function renderInvoices(){   

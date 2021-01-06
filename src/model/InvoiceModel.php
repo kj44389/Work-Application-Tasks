@@ -3,21 +3,16 @@ class InvoiceModel
 {
     private $connect = null;
     //model Constructor
-    public function __construct()
+    public function __construct(){
+    }
+    //method for select records from database
+    public function select()
     {
         try {
             global $config;
             $this->connect = new PDO($config['dsn'], $config['username'], $config['password']);
             $this->connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->connect->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-        } catch (PDOException $e) {
-            echo $e->getMessage();
-        }
-    }
-    //method for select records from database
-    public function select()
-    {
-        try {
             $sql = "SELECT * FROM invoices";
             $stmt = $this->connect->prepare($sql);
             $result = $stmt->execute();
@@ -53,6 +48,10 @@ class InvoiceModel
     public function delete(int $id)
     {
         try {
+            global $config;
+            $this->connect = new PDO($config['dsn'], $config['username'], $config['password']);
+            $this->connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->connect->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             $sql = "DELETE FROM invoices WHERE id = :id";
             $stmt = $this->connect->prepare($sql);
             $stmt ->bindParam(":id",$id,PDO::PARAM_INT);
@@ -66,6 +65,10 @@ class InvoiceModel
       public function insert(Invoice $Invoice)
     {
         try {
+            global $config;
+            $this->connect = new PDO($config['dsn'], $config['username'], $config['password']);
+            $this->connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->connect->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             $sql = "INSERT INTO Invoices VALUES (:id, :BuyerName, :BuyerSurname, :SellerName, :SellerSurname, :BuyerNIP, :SellerNIP, :DateOfMaking, :Name, :UnitPrice, :Quantity, :Discount, :NetValue, :VatValue, :GrossValue, :AddDate)";
             $stmt = $this->connect->prepare($sql);
 

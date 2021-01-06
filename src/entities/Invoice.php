@@ -20,7 +20,7 @@ class Invoice
     private $addDate;
 
     /**
-     * Get the value of invoide id
+     * Get the value of invoice id
      */
     public function getID()
     {
@@ -28,7 +28,7 @@ class Invoice
     }
 
     /**
-     * Set the value of purchaseInvoiceID
+     * Set the value of invoice id
      *
      * @return  self
      */
@@ -40,7 +40,7 @@ class Invoice
     }
 
     /**
-     * Get the value of buyerName
+     * Get the value of Buyer Name
      */
     public function getBuyerName()
     {
@@ -48,7 +48,7 @@ class Invoice
     }
 
     /**
-     * Set the value of buyerName
+     * Set the value of Buyer Name
      *
      * @return  self
      */
@@ -119,7 +119,7 @@ class Invoice
         return $this;
     }
     /**
-     * Get the value of buyerNIP
+     * Get the value of Buyer NIP
      */
     public function getBuyerNIP()
     {
@@ -127,7 +127,7 @@ class Invoice
     }
 
     /**
-     * Set the value of buyerNIP
+     * Set the value of Buyer NIP
      *
      * @return  self
      */
@@ -139,7 +139,7 @@ class Invoice
     }
 
     /**
-     * Get the value of seller NIP
+     * Get the value of Seller NIP
      */
     public function getSellerNIP()
     {
@@ -147,7 +147,7 @@ class Invoice
     }
 
     /**
-     * Set the value of seller NIP
+     * Set the value of Seller NIP
      *
      * @return  self
      */
@@ -159,7 +159,7 @@ class Invoice
     }
 
     /**
-     * Get the value of date Of Making
+     * Get the value of Date Of Making
      */
     public function getDateOfMaking()
     {
@@ -167,7 +167,7 @@ class Invoice
     }
 
     /**
-     * Set the value of date Of Making
+     * Set the value of Date Of Making
      *
      * @return  self
      */
@@ -179,7 +179,7 @@ class Invoice
     }
 
     /**
-     * Get the value of name
+     * Get the value of Name
      */
     public function getName()
     {
@@ -187,7 +187,7 @@ class Invoice
     }
 
     /**
-     * Set the value of name
+     * Set the value of Name
      *
      * @return  self
      */
@@ -199,7 +199,7 @@ class Invoice
     }
 
     /**
-     * Get the value of unit Price
+     * Get the value of Unit Price
      */
     public function getUnitPrice()
     {
@@ -207,7 +207,7 @@ class Invoice
     }
 
     /**
-     * Set the value of unit Price
+     * Set the value of Unit Price
      *
      * @return  self
      */
@@ -219,7 +219,7 @@ class Invoice
     }
 
     /**
-     * Get the value of quantity
+     * Get the value of Quantity
      */
     public function getQuantity()
     {
@@ -227,7 +227,7 @@ class Invoice
     }
 
     /**
-     * Set the value of quantity
+     * Set the value of Quantity
      *
      * @return  self
      */
@@ -239,7 +239,7 @@ class Invoice
     }
 
     /**
-     * Get the value of discount
+     * Get the value of Discount
      */
     public function getDiscount()
     {
@@ -247,7 +247,7 @@ class Invoice
     }
 
     /**
-     * Set the value of discount
+     * Set the value of Discount
      *
      * @return  self
      */
@@ -259,7 +259,7 @@ class Invoice
     }
 
     /**
-     * Get the value of net Value
+     * Get the value of Net Value
      */
     public function getNetValue()
     {
@@ -267,7 +267,7 @@ class Invoice
     }
 
     /**
-     * Set the value of net Value
+     * Set the value of Net Value
      *
      * @return  self
      */
@@ -279,7 +279,7 @@ class Invoice
     }
 
     /**
-     * Get the value of vat Value
+     * Get the value of Vat Value
      */
     public function getVatValue()
     {
@@ -287,7 +287,7 @@ class Invoice
     }
 
     /**
-     * Set the value of vat Value
+     * Set the value of Vat Value
      *
      * @return  self
      */
@@ -299,7 +299,7 @@ class Invoice
     }
 
     /**
-     * Get the value of gross Value
+     * Get the value of Gross Value
      */
     public function getGrossValue()
     {
@@ -307,7 +307,7 @@ class Invoice
     }
 
     /**
-     * Set the value of gross Value
+     * Set the value of Gross Value
      *
      * @return  self
      */
@@ -319,7 +319,7 @@ class Invoice
     }
 
     /**
-     * Get the value of add Date
+     * Get the value of Add Date
      */
     public function getAddDate()
     {
@@ -327,7 +327,7 @@ class Invoice
     }
 
     /**
-     * Set the value of add Date
+     * Set the value of Add Date
      *
      * @return  self
      */
